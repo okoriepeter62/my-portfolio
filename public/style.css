@@ -1,0 +1,45 @@
+* {margin:0; padding:0; box-sizing:border-box;}
+body {font-family: 'Roboto', sans-serif; background:#f4f4f4; color:#333; line-height:1.6;}
+
+/* Header */
+header {background:#0a66c2; color:white; padding:80px 20px; text-align:center;}
+header h1 {font-size:2.5rem; font-weight:700;}
+header p {font-size:1.2rem; margin-top:10px;}
+
+/* Navigation */
+nav {background:#222; text-align:center; position:sticky; top:0; z-index:1000;}
+nav a {color:white; margin:0 15px; text-decoration:none; font-weight:bold; padding:12px 0; display:inline-block; transition:color 0.3s;}
+nav a:hover {color:#0a66c2;}
+
+/* Sections */
+section {padding:60px 20px; max-width:1000px; margin:auto;}
+section h2 {text-align:center; margin-bottom:40px; font-size:2rem; color:#0a66c2;}
+
+/* Project Cards */
+.project-container {display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:20px;}
+.project {background:white; padding:25px; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.1); transition:transform 0.3s, box-shadow 0.3s;}
+.project:hover {transform:translateY(-5px); box-shadow:0 8px 20px rgba(0,0,0,0.15);}
+.project h3 {color:#0a66c2; margin-bottom:12px;}
+.project p {font-size:0.95rem; line-height:1.4;}
+.project a {display:inline-block; margin-top:15px; text-decoration:none; background:#0a66c2; color:white; padding:10px 15px; border-radius:5px; transition:background 0.3s;}
+.project a:hover {background:#06478f;}
+.project a.code {background:#333; margin-left:10px;}
+.project a.code:hover {background:#111;}
+
+/* Skills */
+.skills-list {display:flex; flex-wrap:wrap; justify-content:center; gap:15px; list-style:none; padding:0;}
+.skills-list li {background:#0a66c2; color:white; padding:10px 15px; border-radius:20px; font-weight:bold;}
+
+/* Contact */
+.contact p {text-align:center; margin-bottom:10px;}
+.contact a {color:#0a66c2; text-decoration:none; transition:color 0.3s;}
+.contact a:hover {color:#06478f;}
+
+/* Footer */
+footer {text-align:center; padding:25px; background:#222; color:white; margin-top:40px; font-size:0.9rem;}
+
+/* Responsive */
+@media(max-width:600px){
+  header h1 {font-size:2rem;}
+  section {padding:40px 15px;}
+}
